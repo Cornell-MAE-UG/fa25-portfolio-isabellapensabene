@@ -13,8 +13,7 @@ permalink: /cv/
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
-
+I am a mechanical engineering student and am currently the Suspension Subteam Lead on Cornell Baja Racing. I am excited about engineering in specifically automotive and aerospace applicaitons!
 ---
 
 #### Education
