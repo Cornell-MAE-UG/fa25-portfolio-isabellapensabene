@@ -13,7 +13,7 @@ The next part of the project was to design our own torque wrench to meet specifi
 
 With our material selected, we used our MATLAB script to iterate through different dimensions of the torque wrench until we found a combination which met both the required saftey factors and sensitivity requirements. Below is a diagram of our CAD model with the relevant dimensions called out. 
 
-<img src="{{ '/assets/images/TWCAD.png' | relative_url }}" width="450">
+<img src="{{ '/assets/images/TWCADdims.png' | relative_url }}" width="450">
 
 We used Ansys Static Structural to analyze the torque wrench we had designed. We applied zero displacement supports to the 4 sides of the drive. We applied the force of 37.5 lbs (equal to the moment = 600 in-lbs divided by the length from the end to the center of the drive) to the end of the torque wrench. These supports and loads are displayed in the image below. 
 
@@ -27,13 +27,13 @@ Normal strain contours in strain gauge direction:
 Maximum principle stress:
 <img src="{{ '/assets/images/TWmaxprinstress.png' | relative_url }}" width="450">
 
-The maximum normal stress in the x-direction in the drive was _ psi. 
+The maximum normal stress in the x-direction in the drive was 52371 psi. 
 <img src="{{ '/assets/images/TWmaxnorm.png' | relative_url }}" width="450">
 
 The maximum deflection occured at the load point and had a value of 0.45967 in. 
 <img src="{{ '/assets/images/TWdeform.png' | relative_url }}" width="450">
 
-The strains at the strain gauge location were __. This is also shown in the image below. 
+The strains at the strain gauge location were 0.000078 in the x- and y-directions and 0.0012093 in the z-direction. 
 
 <img src="{{ '/assets/images/TWstrainprobe.png' | relative_url }}" width="450"> 
 
