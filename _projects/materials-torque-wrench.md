@@ -3,7 +3,7 @@ layout: project
 title: Torque Wrench Analysis and Design
 description: Class project with CAD and Ansys
 technologies: [Soldiworks, Ansys, MATLAB]
-image: /assets/images/function-graph.png
+image: /assets/images/TWCAD.png
 ---
 
 
@@ -13,18 +13,19 @@ The next part of the project was to design our own torque wrench to meet specifi
 
 With our material selected, we used our MATLAB script to iterate through different dimensions of the torque wrench until we found a combination which met both the required saftey factors and sensitivity requirements. Below is a diagram of our CAD model with the relevant dimensions called out. 
 
-CAD w DIMENSIONS 
+![CAD with dimensions]({{ "/assets/images/TWCAD" | relative_url }})
 
 We used Ansys Static Structural to analyze the torque wrench we had designed. We applied zero displacement supports to the 4 sides of the drive. We applied the force of 37.5 lbs (equal to the moment = 600 in-lbs divided by the length from the end to the center of the drive) to the end of the torque wrench. These supports and loads are displayed in the image below. 
 
-SUPPORTS IMAGE 
+![Picture of Supports]({{ "/assets/images/TWsupports" | relative_url }}) 
 
 From our FEM analysis, we retrieved the normal strain contours (in the strain gauge direction) and contour plot of the maximum stress, picutred below. The maximum deflection occured at the load point and had a value of __. The maximum normal stress occured in the drive of the torque wrench, with a value of __ psi. 
 
-NORMAL STRAIN CONTOUR AND STRESS CONTOUR IMAGES 
+![Maximum Normal Stress]({{ "/assets/images/TWmaxprinstress.png" | relative_url }})
+![Load Point Deflection]({{ "/assets/images/TWdeform.png" | relative_url }})
 
 The strains at the strain gauge location were __. This is also shown in the image below. 
 
-IMAGE 
+![Strain Probe]({{ "/assets/images/TWstrainprobe" | relative_url }}) 
 
 torque wrench sensitivty and strain gauge seleciton 
