@@ -19,13 +19,24 @@ We used Ansys Static Structural to analyze the torque wrench we had designed. We
 
 <img src="{{ '/assets/images/TWsupports.png' | relative_url }}" width="450"> 
 
-From our FEM analysis, we retrieved the normal strain contours (in the strain gauge direction) and contour plot of the maximum stress, picutred below. The maximum deflection occured at the load point and had a value of __. The maximum normal stress occured in the drive of the torque wrench, with a value of __ psi. 
+From our FEM analysis, we retrieved the normal strain contours (in the strain gauge direction) and contour plot of the maximum principle stress, picutred below.
 
+Normal strain contours in strain gauge direction: 
+<img src="{{ '/assets/images/TWstrainingaugedir.png' | relative_url}}" width="450>
+
+Maximum principle stress:
 <img src="{{ '/assets/images/TWmaxprinstress.png' | relative_url }}" width="450">
+
+The maximum normal stress in the x-direction in the drive was _ psi. 
+<img src="{{ '/assets/images/TWmaxnorm.png' | relative_url }}" width="450">
+
+The maximum deflection occured at the load point and had a value of 0.45967 in. 
 <img src="{{ '/assets/images/TWdeform.png' | relative_url }}" width="450">
 
 The strains at the strain gauge location were __. This is also shown in the image below. 
 
 <img src="{{ '/assets/images/TWstrainprobe.png' | relative_url }}" width="450"> 
 
-torque wrench sensitivty and strain gauge seleciton 
+Our FEM analysis showed a maximum strain (which occurs along the z axis as expected) of 1.2093*10-3 in/in, which is equal to 1209.4 microstrain, and a sensitivity of 1.209 mV/V. This is reasonably close to our calculated sensitivity of 1.17 mV/V, and is likely a little bit larger due to the fact that our code assumed that it could only deform axially, however that’s not entirely true in real life.
+
+We have selected to use a double linear strain gauge, which is most commonly used to measure bending. It is 0.354” x 0.354” so it should have no trouble fitting on our torque wrench.
