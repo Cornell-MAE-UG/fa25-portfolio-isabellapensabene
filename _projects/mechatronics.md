@@ -2,7 +2,7 @@
 layout: project
 title: Mechatronics Robot Project
 description: Group Project Report
-technologies: 
+technologies: Arduino Uno, Solidworks
 image: /assets/images/robot.jpg
 ---
 
